@@ -1,4 +1,6 @@
 5.5. Quorums
+
+
 When you’re trading off consistency or durability, it’s not an all or nothing proposition. The more nodes you involve in a request, the higher is the chance of avoiding an inconsistency. This naturally leads to the question: How many nodes need to be involved to get strong consistency?
 
 Imagine some data replicated over three nodes. You don’t need all nodes to acknowledge a write to ensure strong consistency; all you need is two of them—a majority. If you have conflicting writes, only one can get a majority. This is referred to as a write quorum and expressed in a slightly pretentious inequality of W > N/2, meaning the number of nodes participating in the write (W) must be more than the half the number of nodes involved in replication (N). The number of replicas is often called the replication factor.
