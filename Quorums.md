@@ -1,4 +1,4 @@
-5.5. Quorums
+### 5.5. Quorums
 
 
 When you’re trading off consistency or durability, it’s not an all or nothing proposition. The more nodes you involve in a request, the higher is the chance of avoiding an inconsistency. This naturally leads to the question: How many nodes need to be involved to get strong consistency?
